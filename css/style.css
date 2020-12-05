@@ -1,6 +1,7 @@
+/* ====== Univerals ====== */
+
 /*Font Import*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
-
 
 *{
 	margin:0px;
@@ -45,7 +46,7 @@ html{
 }
 #socials{
 	position:fixed;
-	bottom:30px;
+	bottom:15px;
 	left:30px;
 	list-style:none;
 	cursor:pointer;
@@ -54,7 +55,7 @@ html{
 #hamburger-div{
 	position:fixed;
 	top:20px;
-	right:20px;
+	right:15px;
 	z-index:20;
 	cursor:pointer;
 	z-index:2;
@@ -82,7 +83,7 @@ html{
 #hamburger::after{
 	top:9px;
 }
-/* home section */
+/* ====== home section ====== */
 #home{
 	background-image:url('../images/g2.jpg');
 	background-size:cover;
@@ -120,9 +121,17 @@ html{
 	align-items:center;
 	justify-content:center;
 }
+.display a{
+	text-align:center;
+	border:1px solid red;
+	border-radius:5px;
+	padding:10px;
+	letter-spacing:unset;
+	text-decoration:none;
+}
 /* /home section */
 
-/* about Section */
+/* ====== about Section ====== */
 #holder-box{
 	width:80%;
 	margin:auto;
@@ -141,7 +150,7 @@ html{
 /* /about section */
 
 
-/* services page */
+/* ====== services page ====== */
 #services{
 	background-image:url('../images/g1.jpg');
 	background-size:cover;
@@ -152,7 +161,7 @@ html{
 }
 #services::before{
 	position:absolute;
-	background-color:rgba(0, 0, 0, 0.3);
+	background-color:rgba(0, 0, 0, 0.5);
 	width:100%;
 	height:100%;
 	content : "";
@@ -166,11 +175,12 @@ html{
 /* /services page */
 
 
-/* portfolio page */
+/* ====== portfolio page ====== */
 #portfolio{
 	background-color:#222;
 	min-height:100vh;
 }
+/* Pagination */
 #pagination{
 	list-style-type:none;
 	display:flex;
@@ -184,12 +194,16 @@ html{
 	background-color:white;
 	margin:5px;
 	cursor:pointer;
+	position:relative;
+	z-index:1;
 }
 #pagination .active2{
 	border-radius:50%;
 	width:15px;
 	height:15px;
+
 }
+/* Project Image slider */
 #portfolio-inner{
 	width:100%;
 	height:400px;
@@ -228,6 +242,7 @@ html{
 	left:0px;
 }
 
+/* Project Call to action slider */
 #action{
 	width:230px;
 	height:50px;
@@ -271,6 +286,8 @@ html{
 #action ul li a:hover{
 	background-color:rgba(0, 250, 154, 0.6);
 }
+
+/* Project Numbering Slider */
 #num_count{
 	width:100px;
 	height:100px;
@@ -292,7 +309,7 @@ html{
 	font-weight:bold;
 	color:rgba(0, 250, 154, 0.2);
 }
-
+/* Project Title Slider */
 #title{
 	width:300px;
 	height:70px;
@@ -307,13 +324,11 @@ html{
 	width:100%;
 	height:auto;
 	padding:0px;
-	transform:translateY(-15px);
 	transition:transform 2s;
-
 }
 #title ul li{
 	width:100%;
-	height:auto;
+	height:70px;
 	border-radius:15px;
 	display:flex;
 	justify-content:space-between;
@@ -329,9 +344,12 @@ html{
 /* /portfolio page */
 
 
-/* contact page */
+/* ====== contact page ====== */
 .jumbotron{
-	background-color:rgba(0, 250, 154, 0.6);
+	/* background-color:rgba(0, 250, 154, 0.6); */
+	background-color:#f2f6f8;
+	/* background-image:linear-gradient(to bottom right, rgba(0, 250, 154, 0.8), #222); */
+	/* background-image:linear-gradient(#222, #fff); */
 }
 
 #contact ul{
@@ -348,7 +366,7 @@ html{
 /* /contact page */
 
 
-/* Media Queries */
+/* ====== Media Queries ====== */
 
 @media screen and (max-width: 1100px){
 	#holder-box{
@@ -371,11 +389,4 @@ html{
 		width:70%;
 	}
 }
-.display a{
-	text-align:center;
-	border:1px solid red;
-	border-radius:5px;
-	padding:10px;
-	letter-spacing:unset;
-	text-decoration:none;
-}
+
