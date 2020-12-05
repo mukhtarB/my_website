@@ -105,21 +105,13 @@ html{
 }
 .text-content{
 	padding: 15px 30px;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translateY(-45%);
-    letter-spacing: 3px;
-    font-size: 1.2rem;
-    /* z-index: -5; */
-	/* opacity:0; */
-}
-.carousel-item, .carousel-item h3{
-	height:100%!important;
-	display:flex;
-	align-items:center;
-	justify-content:center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-45%);
+	letter-spacing: 3px;
+	font-size: 1.2rem;
 }
 .display a{
 	text-align:center;
@@ -382,11 +374,16 @@ html{
 		overflow:hidden;
 	}
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 435px){
 	.display a{
 		display:block;
 		margin:auto;
 		width:70%;
 	}
+	.carousel-item{
+		height:75px;
+	}
+	.hx{
+		padding-top:15px;
+	}
 }
-
