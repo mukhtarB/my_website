@@ -37,7 +37,7 @@ html{
 #top{
 	position:fixed;
 	bottom:30px;
-	right:30px;
+	right:25px;
 	padding:5px;
 	cursor:pointer;
 	z-index:1;
@@ -58,7 +58,7 @@ html{
 	right:15px;
 	z-index:20;
 	cursor:pointer;
-	z-index:2;
+	/* z-index:5; */
 }
 #hamburger{
 	width:20px;
@@ -103,6 +103,21 @@ html{
 	left:0px;
 	top:0px;
 }
+.nav-link{
+	background: rgba(0, 0, 0, 0.5);
+	padding:0.2rem 0.7rem;
+}
+.dropdown-menu{
+	background-color:#333;
+	border:1px solid rgba(0, 250, 154, 0.6);
+}
+.dropdown-item{
+	color:rgba(0, 250, 154, 0.6);
+}
+.dropdown-item:hover{
+	background:#333;
+	color:#fff;
+}
 .text-content{
 	padding: 15px 30px;
 	width: 100%;
@@ -113,14 +128,26 @@ html{
 	letter-spacing: 3px;
 	font-size: 1.2rem;
 }
+.carousel-item h3{
+	font-size:3.0rem;
+	text-shadow:3px 3px #000;
+}
 .display a{
 	text-align:center;
-	border:1px solid red;
+	border:1px solid rgba(0, 250, 154, 0.6);
 	border-radius:5px;
 	padding:10px;
 	letter-spacing:unset;
 	text-decoration:none;
+	color:#fff;
+	background-image:linear-gradient(to right, rgba(0, 250, 154, 0.2), #222);
 }
+.display a:hover{
+	background-color:rgba(0, 250, 154, 0.6);
+	background-image:linear-gradient(to right, rgba(0, 250, 154, 0.2), rgba(0, 250, 154, 0.2));
+	
+}
+
 /* /home section */
 
 /* ====== about Section ====== */
@@ -350,10 +377,14 @@ html{
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
+	text-align: center;
 }
 #contact ul li{
 	width:100%;
 	height:auto;
+}
+#contact ul li a{
+	font-size:0.7em;
 }
 /* /contact page */
 
@@ -361,15 +392,16 @@ html{
 /* ====== Media Queries ====== */
 
 @media screen and (max-width: 1100px){
+	.carousel-item h3{
+		font-size:2.5rem;
+	}
 	#holder-box{
 		width:100%;
 	}
 	#contact ul{
 		flex-wrap: wrap;
-		text-align: center;
+		
 	}
-}
-@media screen and (max-width: 1100px){
 	#containertop{
 		overflow:hidden;
 	}
@@ -382,6 +414,9 @@ html{
 	}
 	.carousel-item{
 		height:75px;
+	}
+	.carousel-item h3{
+		font-size:1.75rem;
 	}
 	.hx{
 		padding-top:15px;
