@@ -58,7 +58,6 @@ html{
 	right:15px;
 	z-index:20;
 	cursor:pointer;
-	/* z-index:5; */
 }
 #hamburger{
 	width:20px;
@@ -112,7 +111,8 @@ html{
 	border:1px solid rgba(0, 250, 154, 0.6);
 }
 .dropdown-item{
-	color:rgba(0, 250, 154, 0.6);
+	/* color:rgba(0, 250, 154, 0.6); */
+	color:#fff;
 }
 .dropdown-item:hover{
 	background:#333;
@@ -157,11 +157,23 @@ html{
 }
 #image-box{
 	height: 350px;
+	/* height: 383px; */
     width: 290px;
     border: 5px solid slateblue;
     margin: auto;
 	overflow:hidden;
+	/* position:relative; */
 }
+/* #image-box::before{ */
+	/* position:absolute; */
+	/* background-color:rgba(0, 250, 154, 0.4); */
+	/* width:70%; */
+	/* height:80%; */
+	/* content : ""; */
+	/* left:-50px; */
+	/* top:-30px; */
+	/* z-index:-3; */
+/* } */
 #header-box{
 	border:2px solid #000;
 	width:100%;
@@ -384,7 +396,13 @@ html{
 	height:auto;
 }
 #contact ul li a{
-	font-size:0.7em;
+	font-size:0.6em;
+	color:#444;
+	text-align:center;
+	/* padding-left:15px; */
+}
+#contact ul li a:hover{
+	text-decoration:none;
 }
 /* /contact page */
 
