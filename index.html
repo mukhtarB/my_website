@@ -188,10 +188,12 @@
 					
 					<div class = "col-md-8 pl-5">
 						<ul id = "pagination">
-							<li id = "pg1" class = "active22"></li>
+							<!-- <i id = "slideL" class = "fa fa-angle-left fa-2x mr-5 text-white" aria-hidden = "true"></i> -->
+							<li id = "pg1" class = "active2"></li>
 							<li id = "pg2" class = ""></li>
 							<li id = "pg3" class = ""></li>
 							<li id = "pg4" class = ""></li>
+							<!-- <i id = "slideR" class = "fa fa-angle-right fa-2x ml-5 text-white" aria-hidden = "true"></i> -->
 						</ul>
 						
 						<div id = "portfolio-inner" class = "pl-3 ml-5">
@@ -319,6 +321,10 @@
 			var action_ul = document.getElementById('action_ul');
 			var num_count_ul = document.getElementById('num_count_ul');
 			var title_ul = document.getElementById('title_ul');
+			var slideL = document.getElementById('slideL');
+			var slideR = document.getElementById('slideR');
+			
+			
 			
 			var pg01 = document.getElementById('pg1');
 			var d1 = document.getElementById('imgd1');
@@ -401,6 +407,9 @@
 			d4.onclick = function(){
 				slide_03()
 			}
+			
+			
+
 		
 			//auto update on copyright year
 			var today = new Date();
