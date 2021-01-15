@@ -119,7 +119,7 @@ html{
 	color:#fff;
 }
 .dropdown-item:hover{
-	background:#333;
+	background:rgba(0, 250, 154, 0.6);
 	color:#fff;
 }
 .text-content{
@@ -163,7 +163,7 @@ html{
 	height: 350px;
 	/* height: 383px; */
     width: 290px;
-    border: 5px solid slateblue;
+    border: 5px solid #f2f6f8;
     margin: auto;
 	overflow:hidden;
 	/* position:relative; */
